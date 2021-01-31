@@ -1,5 +1,6 @@
+const icon = document.getElementById("icon");
+
 function navigation() {
-  const icon = document.getElementById("icon");
   const navbar = document.getElementById("navbar");
 
   if (icon.classList.contains("fa-bars")) {
@@ -12,3 +13,5 @@ function navigation() {
     navbar.style.left = "-100%";
   }
 }
+
+icon.addEventListener("click", navigation);
